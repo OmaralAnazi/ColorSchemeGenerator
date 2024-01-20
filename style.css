@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.content {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.flex-container {
+    padding: 1em 0.25em;
+    display: flex;
+    justify-content: space-around;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#random-scheme {
+    color: #5b5b5b;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+#random-scheme:hover {
+    color: black;
+}
+
+#color,
+#mode {
+    height: 8vh;
+    max-height: 120px;
+    min-height: 25px;
+}
+
+#color {
+    width: 20%;
+    border-radius: 5px;
+    border-color: #c1c1c1;
+}
+
+#mode {
+    width: 70%; 
+    border-radius: 5px;
+    font-size: 1.125rem;
+    padding-left: 0.5em;
+    border-color: #c1c1c1;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 
+        "color0 color1 color2 color3 color4"
+        " hex0   hex1   hex2   hex3   hex4 ";
+}
+
+#color0 {grid-area: color0}
+#color1 {grid-area: color1}
+#color2 {grid-area: color2}
+#color3 {grid-area: color3}
+#color4 {grid-area: color4}
+
+#hex0 {grid-area: hex0}
+#hex1 {grid-area: hex1}
+#hex2 {grid-area: hex2}
+#hex3 {grid-area: hex3}
+#hex4 {grid-area: hex4}
+
+.color-scheme {
+    height: 75vh;
+}
+
+p {
+    color: #2B283A;
+    text-align: center;
+    font-size: 0.85rem;
+    line-height: 1.65;
+}
+
+.hex {
+    font-weight: bolder;
+}
+
+.hex:hover {
+    border-radius: 5px;
+    background: #dfdfdf;
+    padding: 0.25em;
+}
+
+.notification {
+    position: fixed;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #151c25;
+    color: white;
+    font-size: 1em;
+    padding: 1em;
+    width: 35%;
+    max-width: 180px;
+    text-align: center;
+    border-radius: 28px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: top 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+@media (min-width:920px) {
+    :root {
+        font-size: 18px;
+    }
+}
+
+@media (min-width:521px) {
+    #color,
+    #mode {
+        min-height: 75px;
+    }
+}
+
+@media (max-width:520px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:440px) {
+    :root {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:370px) {
+    :root {
+        font-size: 10px;
+    }
+}
