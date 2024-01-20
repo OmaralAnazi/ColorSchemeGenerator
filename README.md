@@ -10,7 +10,7 @@ The "Color Scheme Generator" is a solo project designed to assist designers in c
 
 ## Learnings
 - Integrated an external API to fetch and display color schemes.
-- Implemented functionality to allow users to specify types of color schemes they need.
+- Implemented functionality to allow users to specify the types of color schemes they need.
 - Applied dynamic styling to present generated color schemes in an engaging manner.
 - Developed an intuitive UI that makes selecting and saving color schemes straightforward.
 
@@ -18,5 +18,5 @@ The "Color Scheme Generator" is a solo project designed to assist designers in c
 Clone the repository, launch `index.html`, and use the application to generate and save color schemes for your design projects.
 
 ## Demo
-[View Live Project](#)
+[View Live Project](https://fascinating-pika-733774.netlify.app/)
 
